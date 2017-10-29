@@ -20,7 +20,7 @@ defmodule Guido.Crawlers.MoviecomCrawler.FormatterTest do
       ]}
     )
 
-    assert result = %{"Movie DUB" => ["13:00"], "Movie LEG" => ["11:00"]}
+    assert result == %{"Movie DUB" => ["13:00"], "Movie LEG" => ["11:00"]}
   end
 
   test "formats title with multiple session description" do
