@@ -8,3 +8,5 @@ config :guido, GuidoWeb.Endpoint,
 
 # Print only warnings and errors during test
 config :logger, level: :warn
+
+config :guido, :gateway, Guido.Crawlers.MoviecomCrawler.GatewayStub 

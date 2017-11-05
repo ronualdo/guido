@@ -18,7 +18,7 @@ defmodule GuidoTest do
         parse_default_format!("2017-10-20 10:00:00Z")
       ]
     }
-    crawler_function = fn(_date) -> theater1_schedule end
+    crawler_function = fn(_gateway) -> theater1_schedule end
 
     schedule = Guido.movies_schedule(%{theather1: crawler_function})
 
@@ -31,8 +31,8 @@ defmodule GuidoTest do
         parse_default_format!("2017-10-20 10:00:00Z")
       ]
     }
-    theater1_crawler_function = fn(_date) -> theater1_schedule end
-    theater2_crawler_function = fn(_date) -> raise "error message" end
+    theater1_crawler_function = fn(_gateway) -> theater1_schedule end
+    theater2_crawler_function = fn(_gateway) -> raise "error message" end
 
     schedule = Guido.movies_schedule(%{
       theater1: theater1_crawler_function,

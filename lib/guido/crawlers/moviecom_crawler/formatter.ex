@@ -1,4 +1,7 @@
 defmodule Guido.Crawlers.MoviecomCrawler.Formatter do
+
+  def format(input = {:error, message}), do: input
+
   def format(input) do
     input
     |> Enum.flat_map(&format_movie_schedule/1)

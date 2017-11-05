@@ -8,6 +8,8 @@ defmodule Guido do
   """
   use Timex
 
+  @gateway Application.get_env(:guido, :gateway)
+
   def movies_schedule(crawler_mapping) do
     crawler_mapping
     |> Enum.map(&run_crawler/1)
@@ -15,7 +17,7 @@ defmodule Guido do
   end
 
   defp run_crawler({key, crawler_function}) do
-    {key, crawler_function.(Timex.today)}
+    {key, crawler_function.(&@gateway.pull_data/0)}
   rescue
     e -> {key, {:error, e.message}}
   end

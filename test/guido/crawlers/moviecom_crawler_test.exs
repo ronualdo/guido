@@ -7,7 +7,7 @@ defmodule Guido.Crawlers.MoviecomCrawlerTest do
   test "return error if gateway fails to retrieve info" do
     gateway = fn() -> {:error, "problem"} end
 
-    schedule = MoviecomCrawler.extract_data(Timex.today, gateway)
+    schedule = MoviecomCrawler.extract_data(gateway)
 
     assert schedule == {:error, "problem"}
   end
