@@ -1,6 +1,6 @@
 defmodule Guido.Crawlers.MoviecomCrawler.Formatter do
 
-  def format(input = {:error, message}), do: input
+  def format(input = {:error, _message}), do: input
 
   def format(input) do
     input

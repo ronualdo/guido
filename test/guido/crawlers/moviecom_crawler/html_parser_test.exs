@@ -7,43 +7,47 @@ defmodule Guido.Crawlers.MoviecomCrawler.HtmlParserTest do
     data = HtmlParser.parse(read_stub())
 
     assert data == %{
-      "A Morte Te dá Parabéns" => [
-        {["DUB"], ["15:50", "17:50", "19:50"]},
-        {["LEG"], ["21:50"]}
+      "Pica-Pau" => [
+        {["DUB"], ["15:35"]}
+      ],
+      "A Comédia Divina" => [
+        {[], ["14:30", "16:40"]}
       ],
       "As Aventuras do Capitão Cueca" => [
-        {["DUB"], ["15:50", "19:35"]},
-        {["DUB", "3D"], ["17:40"]}
+        {["DUB"], ["14:10"]},
       ],
-      "Blade Runner 2049" => [
-        {["DUB"], ["18:50"]},
-        {["LEG"], ["21:00"]},
+      "A Noiva" => [
+        {["DUB"], ["16:00", "18:00", "20:00"]},
+        {["LEG"], ["22:00"]},
       ],
-      "Chocante" => [
-        {[], ["16:50", "22:00"]}
+      "Além da Morte" => [
+        {["DUB"], ["22:00"]}
       ],
       "Como Se Tornar o Pior Aluno da Escola" => [
-        {[], ["15:00", "17:15", "19:30", "21:45"]}
+        {[], ["20:00"]}
       ],
-      "Entre Irmãs" => [
-        {[],["14:50", "20:45"]}
+      "Big Pai, Big Filho" => [
+        {["DUB"],["14:05", "16:00", "17:55"]}
       ],
-      "IT: A Coisa" => [
-        {["DUB"], ["18:40"]},
-        {["DUB"], ["21:30"]}
+      "Depois Daquela Montanha" => [
+        {["DUB"], ["17:20", "19:35"]},
+        {["LEG"], ["21:50"]}
       ],
-      "Kingsman: O Círculo Dourado" => [
-        {["DUB"], ["18:00"]},
-        {["DUB"], ["21:20"]}
+      "Historietas Assombradas" => [
+        {[], ["14:30", "16:20", "18:10"]}
       ],
-      "LEGO Ninjago: O Filme" => [
-        {["DUB"], ["16:30"]}
+      "Missão Cegonha" => [
+        {["DUB"], ["13:50"]}
       ],
-      "My Little Pony: O Filme" => [
-        {["DUB"], ["14:40"]}
+      "Tempestade: Planeta em Fúria" => [
+        {["DUB"], ["19:50"]}
       ],
-      "Pica-Pau" => [
-        {["DUB"], ["15:45", "17:30", "19:15"]}
+      "Thor: Ragnarok" => [
+        {["DUB"], ["14:00", "16:35", "19:10", "21:45"]},
+        {["DUB", "3D"], ["15:00", "17:40"]},
+        {["DUB"], ["18:45"]},
+        {["LEG", "3D"], ["20:20"]},
+        {["LEG"], ["21:20"]}
       ],
     }
   end

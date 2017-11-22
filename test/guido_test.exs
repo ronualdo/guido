@@ -40,7 +40,7 @@ defmodule GuidoTest do
     })
 
     assert schedule == %{
-      theater2: {:error, "error message"},
+      theater2: %{error: "error message"},
       theater1: theater1_schedule
     }
   end

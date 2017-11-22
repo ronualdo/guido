@@ -39,8 +39,9 @@ defmodule Guido.Mixfile do
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 1.0"},
       {:timex, "~> 3.1"},
-      {:httpotion, "~> 3.0.2"},
-      {:floki, "0.18.0"}
+      {:httpoison, "~> 0.13"},
+      {:html5ever, "~> 0.5.0"},
+      {:meeseeks, "~> 0.7.6"}
     ]
   end
 end

@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="fb:pages" content="180937505270745" />
+	<title>Moviecom: viva o cinema &raquo; Programação</title>
+	<link rel="stylesheet" type="text/css" href="http://moviecom.com.br/site/wp-content/themes/Moviecom/style.css?r=328427">
+	<link rel="stylesheet" type="text/css" href="http://moviecom.com.br/site/wp-content/themes/Moviecom/fonts/stylesheet.css">
+	
+	<link rel="shortcut icon" href="http://moviecom.com.br/site/wp-content/themes/Moviecom/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="http://moviecom.com.br/site/wp-content/themes/Moviecom/favicon.ico" type="image/x-icon">
+	
+	<link rel="stylesheet" type="text/css" href="http://moviecom.com.br/site/wp-content/themes/Moviecom/js/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="http://moviecom.com.br/site/wp-content/themes/Moviecom/js/slick/slick-theme.css"/>
+	<script type="text/javascript" src="http://moviecom.com.br/site/wp-content/themes/Moviecom/js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="http://moviecom.com.br/site/wp-content/themes/Moviecom/js/slick/slick.js"></script>
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-6560069-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+ fbq('init', '1341898709192847'); 
+fbq('track', 'PageView');
+</script>
+<noscript>
+ <img height="1" width="1" 
+src="https://www.facebook.com/tr?id=1341898709192847&ev=PageView
+&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+<!-- Hotjar Tracking Code for moviecom.com.br -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:539561,hjsv:5};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+	 <link rel='dns-prefetch' href='//s.w.org' />
+<meta property="og:title" content="Programação"/><meta property="og:type" content="article"/><meta property="og:url" content="http://moviecom.com.br/programacao/"/><meta property="og:site_name" content="Moviecom Cinemas"/><meta property="og:image" content="http://moviecom.com.br/site/wp-content/uploads/2017/08/logo3.png"/>
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/moviecom.com.br\/site\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.3"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='contact-form-7-css'  href='http://moviecom.com.br/site/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.7' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='http://moviecom.com.br/site/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<script type='text/javascript' src='http://moviecom.com.br/site/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://moviecom.com.br/site/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='http://moviecom.com.br/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://moviecom.com.br/site/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://moviecom.com.br/site/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.7.3" />
+<link rel="canonical" href="http://moviecom.com.br/programacao/" />
+<link rel='shortlink' href='http://moviecom.com.br/?p=106' />
+<link rel="alternate" type="application/json+oembed" href="http://moviecom.com.br/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fmoviecom.com.br%2Fprogramacao%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://moviecom.com.br/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fmoviecom.com.br%2Fprogramacao%2F&#038;format=xml" />
+			<meta property="fb:pages" content="180937505270745" />
+			</head>
+<body>
+
+
+	<div class="topo-aviso">
+		<div class="content">
+			<div class="bannerTopo center"><a href="http://moviecom.com.br/?filmes=extraordinario&utm_source=sitemoviecom&utm_medium=banner&utm_term=Extraordinário&utm_campaign=topo" target="_blank" ><img src="http://moviecom.com.br/site/wp-content/uploads/2017/10/Banner-topo-Extraordinário.gif" width="728" height="90"   /></a></div>			<div class="close-aviso">
+				<div class="bt f-canaro f-1">FECHAR</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="abre-aviso">
+	</div>
+
+
+	<!-- CONTEUDO -->
+	<div class="content-site">
+
+		<!-- Header -->
+		<div class="header">
+
+			<div class="content">
+
+				<div class="logo">
+					<a href="http://moviecom.com.br"><img src="http://moviecom.com.br/site/wp-content/themes/Moviecom/imgs/logo_moviecom.png"></a>
+				</div>
+
+				<a href="http://moviecom.com.br/escolha">
+				<div class="box-choice">
+					<div class="icon">
+						<img src="http://moviecom.com.br/site/wp-content/themes/Moviecom/imgs/icon_location.png">
+					</div>
+					<div class="text f-canaro">Natal &#8211; Praia Shopping</div>
+					<div class="icon-rigth">
+						<img src="http://moviecom.com.br/site/wp-content/themes/Moviecom/imgs/icon_arrow_down.png">
+					</div>
+				</div>
+				</a>
+
+				<div class="logo-mais">
+					<a href="http://moviecom.com.br/moviecom-mais/inicial/"><img src="http://moviecom.com.br/site/wp-content/themes/Moviecom/imgs/logo_moviecom_mais.png"></a>
+				</div>
+<!--
+				<div class="box-choice">
+					<div class="icon">
+						<img src="http://moviecom.com.br/site/wp-content/themes/Moviecom/imgs/icon_location.png">
+					</div>
+					<div class="text f-canaro">O QUE VOCÊ PROCURA?</div>
+					<div class="icon-rigth">
+						<img src="http://moviecom.com.br/site/wp-content/themes/Moviecom/imgs/icon_lupa.png">
+					</div>
+				</div>
+-->
+			</div>
+		</div>
+
+		<div class="menu-div">
+			<div class="menu-wrap">
+				<nav class="menu">
+					<ul>
+						<li class="menu-item"><a href="http://moviecom.com.br">PÁGINA INICIAL </a></li>
+
+						<li class="menu-item">
+							<a href="#">FILMES<span><img src="http://moviecom.com.br/site/wp-content/themes/Moviecom/imgs/icon_arrow_down_pb.png"></span></a>
+							<ul class="submenu">
+								<li class="item"><a href="http://moviecom.com.br/programacao">Programação</a></li>
+								<li class="item"><a href="http://moviecom.com.br/vemai">Vem aí</a></li>
+								<li class="item"><a href="http://moviecom.com.br/venda">Venda Online</a></li>
+								<li class="item"><a href="http://moviecom.com.br/preco">Preços</a></li>
+								<li class="item"><a href="http://moviecom.com.br/novidades">Novidades</a></li>
+							</ul>
+						</li>
+						<li class="menu-item"><a href="http://moviecom.com.br/venda">VENDA ONLINE</a></li>						
+						<li class="menu-item"><a href="#">PRODUTOS & SERVIÇOS<span><img src="http://moviecom.com.br/site/wp-content/themes/Moviecom/imgs/icon_arrow_down_pb.png"></span></a>
+							<ul class="submenu">
+								
+								<li class="item"><a href="http://moviecom.com.br/projetos/projeto-escola">Projeto Escola</a></li>
+								<li class="item"><a href="http://moviecom.com.br/projetos/convite-legal">Convite Legal</a></li>
+																<li class="item"><a href="http://moviecom.com.br/projetos/moviecomtodos">Moviecom Todos</a></li>
+								<li class="item"><a href="http://moviecom.com.br/projetos/locacao-de-salas/">Locação de salas</a></li>								
+							</ul>
+						</li>
+						<li class="menu-item"><a href="http://moviecom.com.br/promocoes">PROMOÇÕES</a>
+							
+
+						</li>
+						<li class="menu-item"><a href="#">MOVIECOM +<span><img src="http://moviecom.com.br/site/wp-content/themes/Moviecom/imgs/icon_arrow_down_pb.png"></span></a>
+							<ul class="submenu">
+								<li class="item"><a href="http://moviecom.com.br/moviecom-mais/inicial/">O que é?</a></li>
+								<li class="item"><a href="http://moviecom.com.br/moviecom-mais/premios-e-beneficios/">Prêmios e benefícios</a></li>
+								<li class="item"><a href="http://moviecom.com.br/moviecom-mais/regulamento/">Regulamento</a></li>
+								<li class="item"><a href="http://moviecom.com.br/moviecom-mais/perguntas-frequentes/">Perguntas Frequentes</a></li>
+								<li class="item"><a href="http://moviecom.com.br/moviecom-mais/como-ter-um/">Como ter um?</a></li>
+								<li class="item"><a href="http://moviecom.com.br/moviecom-mais/meu-moviecom-mais/">Meu Moviecom +</a></li>
+							</ul>
+						</li>
+						<li class="menu-item"><a href="#">INSTITUCIONAL<span><img src="http://moviecom.com.br/site/wp-content/themes/Moviecom/imgs/icon_arrow_down_pb.png"></span></a>
+							<ul class="submenu">
+								<li class="item"><a href="http://moviecom.com.br/institucional/historia/">História</a></li>
+								<li class="item"><a href="http://moviecom.com.br/institucional/onde-estamos/">Onde estamos</a></li>
+								<!--<li class="item"><a href="http://moviecom.com.br/institucional/projetos/">Projetos</a></li>-->
+								<li class="item"><a href="http://moviecom.com.br/institucional/anuncie/">Anuncie</a></li>
+							</ul>
+						</li>
+						<li class="menu-item"><a href="#">RELACIONAMENTO<span><img src="http://moviecom.com.br/site/wp-content/themes/Moviecom/imgs/icon_arrow_down_pb.png"></span></a>
+							<ul class="submenu">
+								<li class="item"><a href="http://moviecom.com.br/relacionamento/fale-conosco/">Fale conosco</a></li>
+								<li class="item"><a href="http://moviecom.com.br/relacionamento/trabalhe-conosco/">Trabalhe conosco</a></li>
+								<li class="item"><a href="http://moviecom.com.br/relacionamento/imprensa/">Imprensa</a></li>
+								<li class="item"><a href="http://moviecom.com.br/redes-sociais/">Redes sociais</a></li>
+								
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+		</div>
+		<!-- FIM Header -->
+
+			  		<a href="#" style="display:block">
+			<div class="lightbox" id="comprar" style=" height: 100%; width: 100%;">
+			
+				<div class="content" style=" display: table-cell; vertical-align: middle;">
+				  <div class="botao bt-center f-canaro" style="width: 200px; margin: 0 auto 15px;"><span onclick="location.href = 'http://moviecom.com.br/venda'">COMPRAR NO SITE</span></div>
+				  <div class="botao bt-center f-canaro" style="width: 200px; margin: 0 auto 15px;"><span onclick="window.open('http://www.ingresso.com/natal/moviecom/local/cinema/moviecom-natal-praia-shopping')">INGRESSO.COM</span></div>
+			 	</div>
+			 
+			</div>
+		</a>
+
+		
+
+
+
+		<!-- CONTENT MIDDLE-->	
+		<div class="content-middle">
+			<div class="content-wrap" style="color:#fff">
+			
+			
+			<div class="content-page">
+					<div class="top-content">
+						<div class="titulo">Programação <span style="font-size:.5em">Natal &#8211; Praia Shopping</span></div>
+						<div class="breadcumbs right">página inicial > filmes > programação</div>
+
+					</div>
+					<div class="separador"></div>
+
+					<!--BARRA FILTRO-->
+					<div class="barra-filtro">
+						<div class="filtro programacao">
+
+							<div class="item f-canaro">FILTRO:</div>
+
+							<div class="choice programacao">
+								<select class="text f-canaro">
+									<option value="volvo">ESCOLHA SUA MOVIECOM</option>
+									<option value="saab">JUNDIAÍ</option>
+									<option value="mercedes">Mercedes</option>
+									<option value="audi">Audi</option>
+								</select>
+
+							</div>
+
+							<div class="choice programacao">
+								<select class="text f-canaro">
+									<option value="volvo">ESCOLHA O GÊNERO</option>
+									<option value="saab">Saab</option>
+									<option value="mercedes">Mercedes</option>
+									<option value="audi">Audi</option>
+								</select>
+
+							</div>
+
+
+							<div class="choice programacao">
+								<select class="text f-canaro">
+									<option value="volvo">ESCOLHA O HORÁRIO</option>
+									<option value="saab">MATINÊ</option>
+									<option value="mercedes">NOITE</option>
+								</select>
+
+							</div>
+
+
+						</div>
+
+						<div class="content-filtro">
+							<div class="programacao-prev" style="display:none"></div>
+
+							
+							<div class="progSemana-atual">
+								<div class="box-dia f-canaro" praca="MNT" dataProg="2017-11-02">
+									<div>02/11<small></small></div>
+									<div class="f-small">QUINTA</div>
+								</div>
+
+								<div class="box-dia f-canaro" praca="MNT" dataProg="2017-11-03">
+									<div>03/11<small></small></div>
+									<div class="f-small">SEXTA</div>
+								</div>
+
+								<div class="box-dia f-canaro" praca="MNT" dataProg="2017-11-04">
+									<div>04/11<small></small></div>
+									<div class="f-small">SÁBADO</div>
+								</div>
+
+								<div class="box-dia f-canaro" praca="MNT" dataProg="2017-11-05">
+									<div>05/11<small></small></div>
+									<div class="f-small">DOMINGO</div>
+								</div>
+
+								<div class="box-dia f-canaro" praca="MNT" dataProg="2017-11-06">
+									<div>06/11<small></small></div>
+									<div class="f-small">SEGUNDA</div>
+								</div>
+
+								<div class="box-dia f-canaro" praca="MNT" dataProg="2017-11-07">
+									<div>07/11<small></small></div>
+									<div class="f-small">TERÇA</div>
+								</div>
+
+								<div class="box-dia f-canaro" praca="MNT" dataProg="2017-11-08">
+									<div>08/11<small></small></div>
+									<div class="f-small">QUARTA</div>
+								</div>
+							</div>
+
+
+							 <div class="progSemana-prox" style="display:none">
+
+							
+								<div class="box-dia f-canaro" praca="MNT" dataProg="2017-11-09">
+									<div>09/11</div>
+									<div class="f-small">QUINTA</div>
+								</div>
+
+								<div class="box-dia f-canaro" praca="MNT" dataProg="2017-11-10">
+									<div>10/11</div>
+									<div class="f-small">SEXTA</div>
+								</div>
+
+								<div class="box-dia f-canaro" praca="MNT" dataProg="2017-11-11">
+									<div>11/11</div>
+									<div class="f-small">SÁBADO</div>
+								</div>
+
+								<div class="box-dia f-canaro" praca="MNT" dataProg="2017-11-12">
+									<div>12/11</div>
+									<div class="f-small">DOMINGO</div>
+								</div>
+
+								<div class="box-dia f-canaro" praca="MNT" dataProg="2017-11-13">
+									<div>13/11</div>
+									<div class="f-small">SEGUNDA</div>
+								</div>
+
+								<div class="box-dia f-canaro" praca="MNT" dataProg="2017-11-14">
+									<div>14/11</div>
+									<div class="f-small">TERÇA</div>
+								</div>
+
+								<div class="box-dia f-canaro" praca="MNT" dataProg="2017-11-15">
+									<div>15/11</div>
+									<div class="f-small">QUARTA</div>
+								</div>
+							
+							</div>
+
+							<div class="programacao-next"></div>
+
+
+							<div class="aviso-prox">
+																<strong>Atenção:</strong> A programação da próxima semana está sujeita a alterações sem aviso prévio.
+
+							</div>
+
+						</div>
+
+
+
+						<div  class="tit-tabela">
+										<div style="width: 40%; float: left;">Filmes</div>
+										<div style="min-width: 10%; float: left; text-align: center;">Tipo</div> 
+										<div style="min-width: 10%; float: left; text-align: center;">Sala</div> 
+										<div style="min-width: 40%; float: left;">Horário</div> 
+						</div>
+
+						<div id="programcao-loading" style="width: 50px; margin:0 auto; display: none;">
+							<img width="50px" style="   margin-top: 20px;" src="http://moviecom.com.br/site/wp-content/themes/Moviecom/imgs/spin.svg">
+						</div>
+
+						<div class="tabela-programacao">
+									<table style="width:100%">                <thead>                    <tr>                        <th style="width: 410px"></th>                        <th style="min-width: 350px"></th>                     </tr>                </thead>                <tbody><tr>   <td class="tabela-linha">       <div class="coluna-filme">           <div class="programcao-filme-img">               <a href="http://moviecom.com.br/?filmes=a-comedia-divina"><img src="http://moviecom.com.br/site/wp-content/uploads/2017/10/comedia-204x300.jpg"></a>           </div>           <div class="programcao-filme-info">                <a href="http://moviecom.com.br/?filmes=a-comedia-divina"><div class="tit">A Comédia Divina </a><span class="classificacao c-14">14</span>               </div>               <div class="duracao f-canaro">98 minutos  ·  Comédia</div>               <div class="botao bt-small f-canaro"><a href="http://moviecom.com.br/vendafilme?idfilme=5008">COMPRAR AGORA</a></div>           </div>       </div>   </td>   <td class="tabela-linha">       <table style="width:100%">           <thead>               <tr>                   <th style="width: 100px"></th>                   <th style="min-width: 85px"></th>                   <th style="min-width: 250px"></th>               </tr>           </thead>           <tbody>               <!--LINHA DE PROGRAMACAO CADA FILME-->               <tr>                   <td>                   </td>                   <td style="text-align: center;">4                   </td>                    <td>                   <div class="icon-hora" data-tooltip="Comprar ingresso"><a href="http://moviecom.com.br/vendasessao/?idprog=11e7bf231f8175e280d084349711a651">14:30</a></div>                   <div class="icon-hora" data-tooltip="Comprar ingresso"><a href="http://moviecom.com.br/vendasessao/?idprog=11e7bf231f81764480d084349711a651">16:40</a></div>                   </td>               </tr>               <!-- FIM LINHA DE PROGRAMACAO CADA FILME-->           </tbody>       </table>       <!--FIMM tabela dentro de tabela-->   </td></tr><br /><table style="width:100%">                <thead>                    <tr>                        <th style="width: 410px"></th>                        <th style="min-width: 350px"></th>                     </tr>                </thead>                <tbody><tr>   <td class="tabela-linha">       <div class="coluna-filme">           <div class="programcao-filme-img">               <a href="http://moviecom.com.br/?filmes=a-noiva"><img src="http://moviecom.com.br/site/wp-content/uploads/2017/10/noiva-ok-204x300.jpg"></a>           </div>           <div class="programcao-filme-info">                <a href="http://moviecom.com.br/?filmes=a-noiva"><div class="tit">A Noiva </a><span class="classificacao c-"></span>               </div>               <div class="duracao f-canaro">93 minutos  ·  Terror</div>               <div class="botao bt-small f-canaro"><a href="http://moviecom.com.br/vendafilme?idfilme=5130">COMPRAR AGORA</a></div>           </div>       </div>   </td>   <td class="tabela-linha">       <table style="width:100%">           <thead>               <tr>                   <th style="width: 100px"></th>                   <th style="min-width: 85px"></th>                   <th style="min-width: 250px"></th>               </tr>           </thead>           <tbody>               <!--LINHA DE PROGRAMACAO CADA FILME-->               <tr>                   <td><div class="icon-tipo dub">DUB</div>                   </td>                   <td style="text-align: center;">7                   </td>                    <td>                   <div class="icon-hora" data-tooltip="Comprar ingresso"><a href="http://moviecom.com.br/vendasessao/?idprog=11e7bf231f81761a80d084349711a651">16:00</a></div>                   <div class="icon-hora" data-tooltip="Comprar ingresso"><a href="http://moviecom.com.br/vendasessao/?idprog=11e7bf231f81767c80d084349711a651">18:00</a></div>                   <div class="icon-hora" data-tooltip="Comprar ingresso"><a href="http://moviecom.com.br/vendasessao/?idprog=11e7bf231f8176de80d084349711a651">20:00</a></div>                   </td>               </tr>               <!-- FIM LINHA DE PROGRAMACAO CADA FILME-->               <!--LINHA DE PROGRAMACAO CADA FILME-->               <tr>                   <td><div class="icon-tipo leg">LEG</div>                   </td>                   <td style="text-align: center;">7                   </td>                    <td>                   <div class="icon-hora" data-tooltip="Comprar ingresso"><a href="http://moviecom.com.br/vendasessao/?idprog=11e7bf231f81773280d084349711a651">22:00</a></div>                   </td>               </tr>               <!-- FIM LINHA DE PROGRAMACAO CADA FILME-->           </tbody>       </table>       <!--FIMM tabela dentro de tabela-->   </td></tr><br /><table style="width:100%">                <thead>                    <tr>                        <th style="width: 410px"></th>                        <th style="min-width: 350px"></th>                     </tr>                </thead>                <tbody><tr>   <td class="tabela-linha">       <div class="coluna-filme">           <div class="programcao-filme-img">               <a href="http://moviecom.com.br/?filmes=alem-da-morte"><img src="http://moviecom.com.br/site/wp-content/uploads/2017/09/além-da-morte-ok-169x300.png"></a>           </div>           <div class="programcao-filme-info">                <a href="http://moviecom.com.br/?filmes=alem-da-morte"><div class="tit">Além da Morte </a><span class="classificacao c-14">14</span>               </div>               <div class="duracao f-canaro">105 minutos  ·  Suspense</div>               <div class="botao bt-small f-canaro"><a href="http://moviecom.com.br/vendafilme?idfilme=4894">COMPRAR AGORA</a></div>           </div>       </div>   </td>   <td class="tabela-linha">       <table style="width:100%">           <thead>               <tr>                   <th style="width: 100px"></th>                   <th style="min-width: 85px"></th>                   <th style="min-width: 250px"></th>               </tr>           </thead>           <tbody>               <!--LINHA DE PROGRAMACAO CADA FILME-->               <tr>                   <td><div class="icon-tipo dub">DUB</div>                   </td>                   <td style="text-align: center;">3                   </td>                    <td>                   <div class="icon-hora" data-tooltip="Comprar ingresso"><a href="http://moviecom.com.br/vendasessao/?idprog=11e7bf231f81772480d084349711a651">22:00</a></div>                   </td>               </tr>               <!-- FIM LINHA DE PROGRAMACAO CADA FILME-->           </tbody>       </table>       <!--FIMM tabela dentro de tabela-->   </td></tr><br /><table style="width:100%">                <thead>                    <tr>                        <th style="width: 410px"></th>                        <th style="min-width: 350px"></th>                     </tr>                </thead>                <tbody><tr>   <td class="tabela-linha">       <div class="coluna-filme">           <div class="programcao-filme-img">               <a href="http://moviecom.com.br/?filmes=as-aventuras-do-capitao-cueca"><img src="http://moviecom.com.br/site/wp-content/uploads/2017/08/cueca-204x300.jpg"></a>           </div>           <div class="programcao-filme-info">                <a href="http://moviecom.com.br/?filmes=as-aventuras-do-capitao-cueca"><div class="tit">As Aventuras do Capitão Cueca </a><span class="classificacao c-Livre">Livre</span>               </div>               <div class="duracao f-canaro">89 minutos  ·  Animação</div>               <div class="botao bt-small f-canaro"><a href="http://moviecom.com.br/vendafilme?idfilme=4507">COMPRAR AGORA</a></div>           </div>       </div>   </td>   <td class="tabela-linha">       <table style="width:100%">           <thead>               <tr>                   <th style="width: 100px"></th>                   <th style="min-width: 85px"></th>                   <th style="min-width: 250px"></th>               </tr>           </thead>           <tbody>               <!--LINHA DE PROGRAMACAO CADA FILME-->               <tr>                   <td><div class="icon-tipo dub">DUB</div>                   </td>                   <td style="text-align: center;">7                   </td>                    <td>                   <div class="icon-hora" data-tooltip="Comprar ingresso"><a href="http://moviecom.com.br/vendasessao/?idprog=11e7bf231f8175c680d084349711a651">14:10</a></div>                   </td>               </tr>               <!-- FIM LINHA DE PROGRAMACAO CADA FILME-->           </tbody>       </table>       <!--FIMM tabela dentro de tabela-->   </td></tr><br /><table style="width:100%">                <thead>                    <tr>                        <th style="width: 410px"></th>                        <th style="min-width: 350px"></th>                     </tr>                </thead>                <tbody><tr>   <td class="tabela-linha">       <div class="coluna-filme">           <div class="programcao-filme-img">               <a href="http://moviecom.com.br/?filmes=big-pai-big-filho"><img src="http://moviecom.com.br/site/wp-content/uploads/2017/10/big-ok-204x300.jpg"></a>           </div>           <div class="programcao-filme-info">                <a href="http://moviecom.com.br/?filmes=big-pai-big-filho"><div class="tit">Big Pai, Big Filho </a><span class="classificacao c-Livre">Livre</span>               </div>               <div class="duracao f-canaro">92 minutos  ·  Animação</div>               <div class="botao bt-small f-canaro"><a href="http://moviecom.com.br/vendafilme?idfilme=5290">COMPRAR AGORA</a></div>           </div>       </div>   </td>   <td class="tabela-linha">       <table style="width:100%">           <thead>               <tr>                   <th style="width: 100px"></th>                   <th style="min-width: 85px"></th>                   <th style="min-width: 250px"></th>               </tr>           </thead>           <tbody>               <!--LINHA DE PROGRAMACAO CADA FILME-->               <tr>                   <td><div class="icon-tipo dub">DUB</div>                   </td>                   <td style="text-align: center;">3                   </td>                    <td>                   <div class="icon-hora" data-tooltip="Comprar ingresso"><a href="http://moviecom.com.br/vendasessao/?idprog=11e7bf231f8175b880d084349711a651">14:05</a></div>                   <div class="icon-hora" data-tooltip="Comprar ingresso"><a href="http://moviecom.com.br/vendasessao/?idprog=11e7bf231f81760c80d084349711a651">16:00</a></div>                   <div class="icon-hora" data-tooltip="Comprar ingresso"><a href="http://moviecom.com.br/vendasessao/?idprog=11e7bf231f81766e80d084349711a651">17:55</a></div>                   </td>               </tr>               <!-- FIM LINHA DE PROGRAMACAO CADA FILME-->           </tbody>       </table>       <!--FIMM tabela dentro de tabela-->   </td></tr><br /><table style="width:100%">                <thead>                    <tr>                        <th style="width: 410px"></th>                        <th style="min-width: 350px"></th>                     </tr>                </thead>                <tbody><tr>   <td class="tabela-linha">       <div class="coluna-filme">           <div class="programcao-filme-img">               <a href="http://moviecom.com.br/?filmes=como-se-tornar-o-pior-aluno-da-escola"><img src="http://moviecom.com.br/site/wp-content/uploads/2017/09/00_pior-aluno_poster_novo-205x300.jpg"></a>           </div>           <div class="programcao-filme-info">                <a href="http://moviecom.com.br/?filmes=como-se-tornar-o-pior-aluno-da-escola"><div class="tit">Como Se Tornar o Pior Aluno da Escola </a><span class="classificacao c-14">14</span>               </div>               <div class="duracao f-canaro">103 minutos  ·  Comédia</div>               <div class="botao bt-small f-canaro"><a href="http://moviecom.com.br/vendafilme?idfilme=5046">COMPRAR AGORA</a></div>           </div>       </div>   </td>   <td class="tabela-linha">       <table style="width:100%">           <thead>               <tr>                   <th style="width: 100px"></th>                   <th style="min-width: 85px"></th>                   <th style="min-width: 250px"></th>               </tr>           </thead>           <tbody>               <!--LINHA DE PROGRAMACAO CADA FILME-->               <tr>                   <td>                   </td>                   <td style="text-align: center;">2                   </td>                    <td>                   <div class="icon-hora" data-tooltip="Comprar ingresso"><a href="http://moviecom.com.br/vendasessao/?idprog=11e7bf231f8176d080d084349711a651">20:00</a></div>                   </td>               </tr>               <!-- FIM LINHA DE PROGRAMACAO CADA FILME-->           </tbody>       </table>       <!--FIMM tabela dentro de tabela-->   </td></tr><br /><table style="width:100%">                <thead>                    <tr>                        <th style="width: 410px"></th>                        <th style="min-width: 350px"></th>                     </tr>                </thead>                <tbody><tr>   <td class="tabela-linha">       <div class="coluna-filme">           <div class="programcao-filme-img">               <a href="http://moviecom.com.br/?filmes=depois-daquela-montanha"><img src="http://moviecom.com.br/site/wp-content/uploads/2017/10/montanha-ok-204x300.jpg"></a>           </div>           <div class="programcao-filme-info">                <a href="http://moviecom.com.br/?filmes=depois-daquela-montanha"><div class="tit">Depois Daquela Montanha </a><span class="classificacao c-12">12</span>               </div>               <div class="duracao f-canaro">103 minutos  ·  Drama</div>               <div class="botao bt-small f-canaro"><a href="http://moviecom.com.br/vendafilme?idfilme=4813">COMPRAR AGORA</a></div>           </div>       </div>   </td>   <td class="tabela-linha">       <table style="width:100%">           <thead>               <tr>                   <th style="width: 100px"></th>                   <th style="min-width: 85px"></th>                   <th style="min-width: 250px"></th>               </tr>           </thead>           <tbody>               <!--LINHA DE PROGRAMACAO CADA FILME-->               <tr>                   <td><div class="icon-tipo dub">DUB</div>                   </td>                   <td style="text-align: center;">5                   </td>                    <td>                   <div class="icon-hora" data-tooltip="Comprar ingresso"><a href="http://moviecom.com.br/vendasessao/?idprog=11e7bf231f81765280d084349711a651">17:20</a></div>                   <div class="icon-hora" data-tooltip="Comprar ingresso"><a href="http://moviecom.com.br/vendasessao/?idprog=11e7bf231f8176b480d084349711a651">19:35</a></div>                   </td>               </tr>               <!-- FIM LINHA DE PROGRAMACAO CADA FILME-->               <!--LINHA DE PROGRAMACAO CADA FILME-->               <tr>                   <td><div class="icon-tipo leg">LEG</div>                   </td>                   <td style="text-align: center;">5                   </td>                    <td>                   <div class="icon-hora" data-tooltip="Comprar ingresso"><a href="http://moviecom.com.br/vendasessao/?idprog=11e7bf231f81771680d084349711a651">21:50</a></div>                   </td>               </tr>               <!-- FIM LINHA DE PROGRAMACAO CADA FILME-->           </tbody>       </table>       <!--FIMM tabela dentro de tabela-->   </td></tr><br /><table style="width:100%">                <thead>                    <tr>                        <th style="width: 410px"></th>                        <th style="min-width: 350px"></th>                     </tr>                </thead>                <tbody><tr>   <td class="tabela-linha">       <div class="coluna-filme">           <div class="programcao-filme-img">               <a href="http://moviecom.com.br/?filmes=historietas-assombradas-o-filme"><img src="http://moviecom.com.br/site/wp-content/uploads/2017/10/assombradas-ok-205x300.jpg"></a>           </div>           <div class="programcao-filme-info">                <a href="http://moviecom.com.br/?filmes=historietas-assombradas-o-filme"><div class="tit">Historietas Assombradas </a><span class="classificacao c-Livre">Livre</span>               </div>               <div class="duracao f-canaro">90 minutos  ·  Animação</div>               <div class="botao bt-small f-canaro"><a href="http://moviecom.com.br/vendafilme?idfilme=5348">COMPRAR AGORA</a></div>           </div>       </div>   </td>   <td class="tabela-linha">       <table style="width:100%">           <thead>               <tr>                   <th style="width: 100px"></th>                   <th style="min-width: 85px"></th>                   <th style="min-width: 250px"></th>               </tr>           </thead>           <tbody>               <!--LINHA DE PROGRAMACAO CADA FILME-->               <tr>                   <td>                   </td>                   <td style="text-align: center;">2                   </td>                    <td>                   <div class="icon-hora" data-tooltip="Comprar ingresso"><a href="http://moviecom.com.br/vendasessao/?idprog=11e7bf231f8175d480d084349711a651">14:30</a></div>                   <div class="icon-hora" data-tooltip="Comprar ingresso"><a href="http://moviecom.com.br/vendasessao/?idprog=11e7bf231f81762880d084349711a651">16:20</a></div>                   <div class="icon-hora" data-tooltip="Comprar ingresso"><a href="http://moviecom.com.br/vendasessao/?idprog=11e7bf231f81768a80d084349711a651">18:10</a></div>                   </td>               </tr>               <!-- FIM LINHA DE PROGRAMACAO CADA FILME-->           </tbody>       </table>       <!--FIMM tabela dentro de tabela-->   </td></tr><br /><table style="width:100%">                <thead>                    <tr>                        <th style="width: 410px"></th>                        <th style="min-width: 350px"></th>                     </tr>                </thead>                <tbody><tr>   <td class="tabela-linha">       <div class="coluna-filme">           <div class="programcao-filme-img">               <a href="http://moviecom.com.br/?filmes=missao-cegonha"><img src="http://moviecom.com.br/site/wp-content/uploads/2017/10/missão-cegonha-ok-205x300.jpg"></a>           </div>           <div class="programcao-filme-info">                <a href="http://moviecom.com.br/?filmes=missao-cegonha"><div class="tit">Missão Cegonha </a><span class="classificacao c-Livre">Livre</span>               </div>               <div class="duracao f-canaro">104 minutos  ·  Animação</div>               <div class="botao bt-small f-canaro"><a href="http://moviecom.com.br/vendafilme?idfilme=5013">COMPRAR AGORA</a></div>           </div>       </div>   </td>   <td class="tabela-linha">       <table style="width:100%">           <thead>               <tr>                   <th style="width: 100px"></th>                   <th style="min-width: 85px"></th>                   <th style="min-width: 250px"></th>               </tr>           </thead>           <tbody>               <!--LINHA DE PROGRAMACAO CADA FILME-->               <tr>                   <td><div class="icon-tipo dub">DUB</div>                   </td>                   <td style="text-align: center;">5                   </td>                    <td>                   <div class="icon-hora" data-tooltip="Comprar ingresso"><a href="http://moviecom.com.br/vendasessao/?idprog=11e7bf231f81759c80d084349711a651">13:50</a></div>                   </td>               </tr>               <!-- FIM LINHA DE PROGRAMACAO CADA FILME-->           </tbody>       </table>       <!--FIMM tabela dentro de tabela-->   </td></tr><br /><table style="width:100%">                <thead>                    <tr>                        <th style="width: 410px"></th>                        <th style="min-width: 350px"></th>                     </tr>                </thead>                <tbody><tr>   <td class="tabela-linha">       <div class="coluna-filme">           <div class="programcao-filme-img">               <a href="http://moviecom.com.br/?filmes=pica-pau"><img src="http://moviecom.com.br/site/wp-content/uploads/2017/08/pica-pau-ok-204x300.jpg"></a>           </div>           <div class="programcao-filme-info">                <a href="http://moviecom.com.br/?filmes=pica-pau"><div class="tit">Pica-Pau </a><span class="classificacao c-Livre">Livre</span>               </div>               <div class="duracao f-canaro">94 minutos  ·  Animação</div>               <div class="botao bt-small f-canaro"><a href="http://moviecom.com.br/vendafilme?idfilme=4493">COMPRAR AGORA</a></div>           </div>       </div>   </td>   <td class="tabela-linha">       <table style="width:100%">           <thead>               <tr>                   <th style="width: 100px"></th>                   <th style="min-width: 85px"></th>                   <th style="min-width: 250px"></th>               </tr>           </thead>           <tbody>               <!--LINHA DE PROGRAMACAO CADA FILME-->               <tr>                   <td><div class="icon-tipo dub">DUB</div>                   </td>                   <td style="text-align: center;">5                   </td>                    <td>                   <div class="icon-hora" data-tooltip="Comprar ingresso"><a href="http://moviecom.com.br/vendasessao/?idprog=11e7bf231f8175fe80d084349711a651">15:35</a></div>                   </td>               </tr>               <!-- FIM LINHA DE PROGRAMACAO CADA FILME-->           </tbody>       </table>       <!--FIMM tabela dentro de tabela-->   </td></tr><br /><table style="width:100%">                <thead>                    <tr>                        <th style="width: 410px"></th>                        <th style="min-width: 350px"></th>                     </tr>                </thead>                <tbody><tr>   <td class="tabela-linha">       <div class="coluna-filme">           <div class="programcao-filme-img">               <a href="http://moviecom.com.br/?filmes=tempestade-planeta-em-furia"><img src="http://moviecom.com.br/site/wp-content/uploads/2017/09/tempestade-203x300.jpg"></a>           </div>           <div class="programcao-filme-info">                <a href="http://moviecom.com.br/?filmes=tempestade-planeta-em-furia"><div class="tit">Tempestade: Planeta em Fúria </a><span class="classificacao c-12">12</span>               </div>               <div class="duracao f-canaro">109 minutos  ·  Ação</div>               <div class="botao bt-small f-canaro"><a href="http://moviecom.com.br/vendafilme?idfilme=5006">COMPRAR AGORA</a></div>           </div>       </div>   </td>   <td class="tabela-linha">       <table style="width:100%">           <thead>               <tr>                   <th style="width: 100px"></th>                   <th style="min-width: 85px"></th>                   <th style="min-width: 250px"></th>               </tr>           </thead>           <tbody>               <!--LINHA DE PROGRAMACAO CADA FILME-->               <tr>                   <td><div class="icon-tipo dub">DUB</div>                   </td>                   <td style="text-align: center;">3                   </td>                    <td>                   <div class="icon-hora" data-tooltip="Comprar ingresso"><a href="http://moviecom.com.br/vendasessao/?idprog=11e7bf231f8176c280d084349711a651">19:50</a></div>                   </td>               </tr>               <!-- FIM LINHA DE PROGRAMACAO CADA FILME-->           </tbody>       </table>       <!--FIMM tabela dentro de tabela-->   </td></tr><br /><table style="width:100%">                <thead>                    <tr>                        <th style="width: 410px"></th>                        <th style="min-width: 350px"></th>                     </tr>                </thead>                <tbody><tr>   <td class="tabela-linha">       <div class="coluna-filme">           <div class="programcao-filme-img">               <a href="http://moviecom.com.br/?filmes=thor-ragnarok"><img src="http://moviecom.com.br/site/wp-content/uploads/2017/09/thor-202x300.jpg"></a>           </div>           <div class="programcao-filme-info">                <a href="http://moviecom.com.br/?filmes=thor-ragnarok"><div class="tit">Thor: Ragnarok </a><span class="classificacao c-12">12</span>               </div>               <div class="duracao f-canaro">130 minutos  ·  Ação; Aventura</div>               <div class="botao bt-small f-canaro"><a href="http://moviecom.com.br/vendafilme?idfilme=4060">COMPRAR AGORA</a></div>           </div>       </div>   </td>   <td class="tabela-linha">       <table style="width:100%">           <thead>               <tr>                   <th style="width: 100px"></th>                   <th style="min-width: 85px"></th>                   <th style="min-width: 250px"></th>               </tr>           </thead>           <tbody>               <!--LINHA DE PROGRAMACAO CADA FILME-->               <tr>                   <td><div class="icon-tipo dub">DUB</div>                   </td>                   <td style="text-align: center;">6                   </td>                    <td>                   <div class="icon-hora" data-tooltip="Comprar ingresso"><a href="http://moviecom.com.br/vendasessao/?idprog=11e7bf231f8175aa80d084349711a651">14:00</a></div>                   <div class="icon-hora" data-tooltip="Comprar ingresso"><a href="http://moviecom.com.br/vendasessao/?idprog=11e7bf231f81763680d084349711a651">16:35</a></div>                   <div class="icon-hora" data-tooltip="Comprar ingresso"><a href="http://moviecom.com.br/vendasessao/?idprog=11e7bf231f8176a680d084349711a651">19:10</a></div>                   <div class="icon-hora" data-tooltip="Comprar ingresso"><a href="http://moviecom.com.br/vendasessao/?idprog=11e7bf231f81770880d084349711a651">21:45</a></div>                   </td>               </tr>               <!-- FIM LINHA DE PROGRAMACAO CADA FILME-->               <!--LINHA DE PROGRAMACAO CADA FILME-->               <tr>                   <td><div class="icon-tipo dub">DUB</div><div class="icon-tipo s3d">3D</div>                   </td>                   <td style="text-align: center;">1                   </td>                    <td>                   <div class="icon-hora" data-tooltip="Comprar ingresso"><a href="http://moviecom.com.br/vendasessao/?idprog=11e7bf231f8175f080d084349711a651">15:00</a></div>                   <div class="icon-hora" data-tooltip="Comprar ingresso"><a href="http://moviecom.com.br/vendasessao/?idprog=11e7bf231f81766080d084349711a651">17:40</a></div>                   </td>               </tr>               <!-- FIM LINHA DE PROGRAMACAO CADA FILME-->               <!--LINHA DE PROGRAMACAO CADA FILME-->               <tr>                   <td><div class="icon-tipo dub">DUB</div>                   </td>                   <td style="text-align: center;">4                   </td>                    <td>                   <div class="icon-hora" data-tooltip="Comprar ingresso"><a href="http://moviecom.com.br/vendasessao/?idprog=11e7bf231f81769880d084349711a651">18:45</a></div>                   </td>               </tr>               <!-- FIM LINHA DE PROGRAMACAO CADA FILME-->               <!--LINHA DE PROGRAMACAO CADA FILME-->               <tr>                   <td><div class="icon-tipo leg">LEG</div><div class="icon-tipo s3d">3D</div>                   </td>                   <td style="text-align: center;">1                   </td>                    <td>                   <div class="icon-hora" data-tooltip="Comprar ingresso"><a href="http://moviecom.com.br/vendasessao/?idprog=11e7bf231f8176ec80d084349711a651">20:20</a></div>                   </td>               </tr>               <!-- FIM LINHA DE PROGRAMACAO CADA FILME-->               <!--LINHA DE PROGRAMACAO CADA FILME-->               <tr>                   <td><div class="icon-tipo leg">LEG</div>                   </td>                   <td style="text-align: center;">4                   </td>                    <td>                   <div class="icon-hora" data-tooltip="Comprar ingresso"><a href="http://moviecom.com.br/vendasessao/?idprog=11e7bf231f8176fa80d084349711a651">21:20</a></div>                   </td>               </tr>               <!-- FIM LINHA DE PROGRAMACAO CADA FILME-->           </tbody>       </table>       <!--FIMM tabela dentro de tabela-->   </td></tr><br /></tbody></table>						</div>
+
+					</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+				</div>					
+
+
+
+
+			</div>
+
+		</div>
+		<!-- FIM CONTENT MIDDLE-->
+
+		<!-- CONTENT FOOTER-->
+		<div class="content-footer">
+			<div class="wrap">
+				<div class="social">
+					<div class="item">
+						<a href="https://www.facebook.com/moviecomcinemas/" target="_blank"><img src="http://moviecom.com.br/site/wp-content/themes/Moviecom/imgs/social_fb.png"></a>
+						<a href="https://www.facebook.com/moviecomcinemas/" target="_blank"><div class="txt">Facebook<br><span class="f-canaro f-small">/MOVIECOMCINEMAS</span></div></a>
+					</div>
+					
+					
+					<div class="item">
+						<a href="https://twitter.com/moviecom" target="_blank"><img src="http://moviecom.com.br/site/wp-content/themes/Moviecom/imgs/social_twitter.png"></a>
+						<a href="https://twitter.com/moviecom" target="_blank"><div class="txt">Twitter<br><span class="f-canaro f-small">/MOVIECOM</span></div></a>
+					</div>
+
+
+					
+					<div class="item">
+						<a href="https://www.instagram.com/moviecomcinemas/" target="_blank"><img src="http://moviecom.com.br/site/wp-content/themes/Moviecom/imgs/social_insta.png"></a>
+						<a href="https://www.instagram.com/moviecomcinemas/" target="_blank"><div class="txt">Instagram<br><span class="f-canaro f-small">/MOVIECOMCINEMAS</span></div></a>
+					</div>
+					
+					<div class="item">
+						<a href="https://www.youtube.com/user/canalmoviecom" target="_blank"><img src="http://moviecom.com.br/site/wp-content/themes/Moviecom/imgs/social_yt.png"></a>
+						<a href="https://www.youtube.com/user/canalmoviecom" target="_blank"><div class="txt">Youtube<br><span class="f-canaro f-small">/CANALMOVIECOM</span></div></a>
+					</div>
+
+					
+				</div>
+
+				<div class="separador"></div>
+
+
+
+				<div class="box-promo">
+					<div class="item"><a href="http://moviecom.com.br/itaucard/" target="_blank"><img src="http://moviecom.com.br/site/wp-content/uploads/2017/03/ad_itaucard.gif"></a></div><div class="item"><a href="http://moviecom.com.br/projetos/projeto-escola/" target="_blank"><img src="http://moviecom.com.br/site/wp-content/uploads/2017/03/Gif-Projeto-Escola.gif"></a></div><div class="item"><a href="http://moviecom.com.br/venda/" target="_blank"><img src="http://moviecom.com.br/site/wp-content/uploads/2017/03/Venda-Online.gif"></a></div>				</div>
+
+			</div>
+			
+		</div>
+		<!-- FIM CONTENT FOOTER-->
+  
+   <script type="text/javascript" >
+   $(document).ready(function(){
+   	var d = 3;
+
+    $('.box-dia:eq('+d+')').addClass('active');
+
+
+	})
+   	
+    $('.programacao-next').click(function(){
+    	$('.aviso-prox').show();
+    	$('.progSemana-atual').hide();
+		$('.progSemana-prox').show();
+    	$('.programacao-prev').show(); 
+    	$('.programacao-next').hide();   	
+
+
+    });
+
+
+    $('.programacao-prev').click(function(){
+    	$('.aviso-prox').hide();
+    	$('.progSemana-atual').show();
+		$('.progSemana-prox').hide();
+		$('.programacao-prev').hide(); 
+    	$('.programacao-next').show(); 
+    	    	
+
+
+    });
+   
+
+
+   $('.box-dia').click(function(){
+
+   		$('.box-dia').removeClass('active');
+   		$(this).addClass('active');
+   		$('#programcao-loading').show();
+
+
+   		$('.tabela-programacao').html("");
+   		var praca= $(this).attr('praca');
+   		var dataProg= $(this).attr('dataProg');
+
+        var data = {
+            'action': 'getProgramacaoAJAX',
+            'praca': praca,
+            'dataProg': dataProg,
+        };
+
+        
+        jQuery.post('http://moviecom.com.br/site/wp-admin/admin-ajax.php', data, function(response) {
+        	$('.tabela-programacao').html(response);
+        	$('#programcao-loading').hide();
+            
+        });
+   });
+
+
+
+    function getProg(praca,dataProg) {
+    	
+    };
+    </script>
+
+
+		<!-- FOOTER-->
+		<div class="footer">
+			<div class="wrap">
+				<div class="coluna">
+					<div class="tit f-canaro">FILMES</div>
+					<div class="item"><a href="http://moviecom.com.br/programacao">Programação</a></div>
+					<div class="item"><a href="http://moviecom.com.br/vemai">Vem aí</a></div>
+					<div class="item"><a href="/venda">Venda Online</a></div>
+					<div class="item"><a href="http://moviecom.com.br/precos">Preços</a></div>
+					<div class="item"><a href="http://moviecom.com.br/novidades">Novidades</a></div>
+				</div>
+
+
+				<div class="coluna">
+					<div class="tit f-canaro">PRODUTOS</div>
+
+					<div class="item"><a href="http://moviecom.com.br/projetos/projeto-escola">Projeto Escola</a></div>
+					<div class="item"><a href="http://moviecom.com.br/projetos/convite-legal">Convite Legal</a></div>
+					 
+					<div class="item"><a href="http://moviecom.com.br/projetos/moviecomtodos">Moviecom Todos</a></div>
+					<div class="item"><a href="http://moviecom.com.br/projetos/locacao-de-salas/">Locação de salas</a></div>		
+				</div>
+
+
+				<div class="coluna">
+					<div class="tit f-canaro">PROMOÇÕES</div>
+					<div class="item"><a href="http://moviecom.com.br/promocoes">Promoções em Natal &#8211; Praia Shopping </a></div>
+					<div class="item"><a href="http://moviecom.com.br/moviecom-mais">Moviecom+</a></div>
+					<div class="item"><a href="http://moviecom.com.br/itaucard">Itaucard</a></div>
+				</div>
+
+
+				<div class="coluna">
+					<div class="tit f-canaro">MOVIECOM+</div>
+					<div class="item"><a href="http://moviecom.com.br/moviecom-mais/inicial/">O que é?</a></div>
+					<div class="item"><a href="http://moviecom.com.br/moviecom-mais/premios-e-beneficios/">Prêmios e benefícios</a></div>
+					<div class="item"><a href="http://moviecom.com.br/moviecom-mais/regulamento/">Regulamento</a></div>
+					<div class="item"><a href="http://moviecom.com.br/moviecom-mais/perguntas-frequentes/">Perguntas Frequentes</a></div>
+					<div class="item"><a href="http://moviecom.com.br/moviecom-mais/como-ter-um/">Como ter um?</a></div>
+					<div class="item"><a href="http://moviecom.com.br/moviecom-mais/meu-moviecom-mais/">Meu Moviecom +</a></div>
+				</div>
+
+
+				<div class="coluna">
+					<div class="tit f-canaro">INSTITUCIONAL</div>
+					<div class="item"><a href="http://moviecom.com.br/institucional/historia/">História</a></div>
+					<div class="item"><a href="http://moviecom.com.br/institucional/onde-estamos/">Onde estamos</a></div>
+					<!--<div class="item"><a href="http://moviecom.com.br/institucional/projetos/">Projetos</a></div>-->
+					<div class="item"><a href="http://moviecom.com.br/institucional/anuncie/">Anuncie</a></div>
+				</div>
+
+
+				<div class="coluna">
+					<div class="tit f-canaro">RELACIONAMENTO</div>
+					<div class="item"><a href="http://moviecom.com.br/relacionamento/fale-conosco/">Fale conosco</a></div>
+					<div class="item"><a href="http://moviecom.com.br/relacionamento/trabalhe-conosco/">Trabalhe conosco</a></div>
+					<div class="item"><a href="http://moviecom.com.br/relacionamento/imprensa/">Imprensa</a></div>
+					<div class="item"><a href="http://moviecom.com.br/redes-sociais/">Redes sociais</a></div>
+				</div>
+
+				
+			</div>
+			<div class="separador"></div>
+
+			<div class="wrap">
+				<div class="logo">
+					<img src="http://moviecom.com.br/site/wp-content/themes/Moviecom/imgs/logo_moviecom.png">
+				</div>
+				<div style="width: 40%; float: left; text-align:center; padding-top: 30px; color: #fff; ">Moviecom Cinemas 2017 © Todos os direitos reservados</div>
+				<div class="box-choice" style="margin-top: 30px;">
+					<div class="icon">
+						<img src="http://moviecom.com.br/site/wp-content/themes/Moviecom/imgs/icon_location.png">
+					</div>
+					<div class="text f-canaro">Natal &#8211; Praia Shopping</div>
+					<div class="icon-rigth">
+						<img src="http://moviecom.com.br/site/wp-content/themes/Moviecom/imgs/icon_arrow_down.png">
+					</div>
+				</div>
+				<div class="creditos">
+				<a href="http://www.tripecriacao.com.br/?utm_source=moviecom&amp;utm_medium=site&amp;utm_campaign=assinatura" target="_blank"><img src="http://moviecom.com.br/imgs/logotripe.png" border="0" alt="Desenvolvido por Tripé Criação" width="44" height="15" longdesc="tripecriacao.com.br" ></a>
+				</div>
+			</div>
+
+		</div>
+		<!-- FIM FOOTER-->
+
+	</div>
+
+	<script type="text/javascript">
+
+		$( document ).ready(function() {
+			$('.banner').slick({
+				autoplay: true,
+  				autoplaySpeed: 5000,
+
+			});
+
+			$('.carrossel-programacao').slick({
+				infinite: true,
+				slidesToShow: 4,
+				slidesToScroll: 1,
+				centerMode: false
+			});
+
+			$('.vemai-carossel').slick({
+				infinite: true,
+				slidesToShow: 4,
+				slidesToScroll: 1,
+				centerMode: false
+			});
+
+
+
+
+
+
+			var avisoAberto = true;
+			$('.close-aviso').click(function(){
+				$('.topo-aviso').css('margin-top',"-200px");
+				avisoAberto = false;
+			});
+
+			$( ".abre-aviso" ).hover(
+				function() {
+					if(!avisoAberto){
+						$('.topo-aviso').css('margin-top',"-180px")
+
+					}
+				}, function() {
+					if(!avisoAberto){
+						$('.topo-aviso').css('margin-top',"-200px")
+					}
+				}
+				);
+
+			$( ".abre-aviso" ).click(function(){
+
+				$('.topo-aviso').css('margin-top',"0px");
+				avisoAberto = true;
+			}
+			);
+
+
+			$( "#troca-praca" ).click(function(){
+
+				$('.pracas').css('opacity',"1");
+				$('#escolha').css('height',"0px");
+				$('#separa').css('opacity',"0");
+				
+			}
+			);
+
+				$( "#close-escolha" ).click(function(){
+						$('.escolha').hide();
+				});
+			
+
+			
+
+		});
+
+		
+
+	</script>
+	<!-- CONTEUDO -->
+	<script type="text/javascript" src="http://moviecom.com.br/site/wp-content/themes/Moviecom/js/location.js"></script>
+	 <script type='text/javascript' src='http://moviecom.com.br/site/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://moviecom.com.br/site/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.7'></script>
+<script type='text/javascript' src='http://moviecom.com.br/site/wp-includes/js/wp-embed.min.js?ver=4.7.3'></script>
+
+</body>
+</html>

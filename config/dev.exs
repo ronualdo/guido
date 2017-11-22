@@ -48,4 +48,4 @@ config :logger, :console, format: "[$level] $message\n"
 # in production as building large stacktraces may be expensive.
 config :phoenix, :stacktrace_depth, 20
 
-config :guido, :gateway, Guido.Crawlers.MoviecomCrawler.GatewayStub 
+config :guido, :gateway, Guido.Crawlers.Gateway

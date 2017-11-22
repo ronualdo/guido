@@ -19,6 +19,6 @@ defmodule Guido do
   defp run_crawler({key, crawler_function}) do
     {key, crawler_function.(&@gateway.pull_data/0)}
   rescue
-    e -> {key, {:error, e.message}}
+    e -> {key, %{error: Exception.message(e)}}
   end
 end
