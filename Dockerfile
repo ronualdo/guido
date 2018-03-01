@@ -1,4 +1,4 @@
-FROM elixir:1.5.2
+FROM elixir:1.6.1
 
 RUN mix local.hex --force
 
@@ -9,14 +9,10 @@ COPY . /app
 WORKDIR /app
 
 # installing Rust
-RUN mkdir /app/.cargo
 ENV CARGO_HOME=/app/.cargo
 ENV PATH=$CARGO_HOME/bin:$PATH
-RUN curl -O https://static.rust-lang.org/rustup/dist/x86_64-unknown-linux-gnu/rustup-init
-RUN chmod +x rustup-init && ./rustup-init -y
-RUN rustc --version
+RUN curl https://sh.rustup.rs -sSf | sh -s -- -y
 
-RUN mix deps.get
-RUN mix compile
+RUN mix deps.get && mix local.rebar --force && mix compile --force
 
 CMD mix phx.server

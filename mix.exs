@@ -40,8 +40,7 @@ defmodule Guido.Mixfile do
       {:cowboy, "~> 1.0"},
       {:timex, "~> 3.1"},
       {:httpoison, "~> 0.13"},
-      {:html5ever, "~> 0.5.0"},
-      {:meeseeks, "~> 0.7.6"}
+      {:meeseeks, "~> 0.7.7"}
     ]
   end
 end
