@@ -9,7 +9,8 @@ defmodule Guido.Mixfile do
       elixirc_paths: elixirc_paths(Mix.env),
       compilers: [:phoenix, :gettext] ++ Mix.compilers,
       start_permanent: Mix.env == :prod,
-      deps: deps()
+      deps: deps(),
+      preferred_cli_env: ["unit_test": :test, "acceptance_test": :test, "integration_test": :test]
     ]
   end
 

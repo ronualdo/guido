@@ -3,6 +3,7 @@ defmodule Guido.Crawlers.MoviecomCrawler.HtmlParserTest do
 
   alias Guido.Crawlers.MoviecomCrawler.HtmlParser
 
+  @tag :integration
   test "returns data extracted from provided content" do
     data = HtmlParser.parse(read_stub())
 

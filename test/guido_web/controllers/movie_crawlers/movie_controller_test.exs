@@ -1,6 +1,7 @@
 defmodule Guido.MoviesCrawlers.MovieControllerTest do
   use GuidoWeb.ConnCase
 
+  @tag :acceptance
   test '#index returns a summary of movies schedule', %{conn: conn} do
     result = get(conn, movie_path(conn, :index)) |> json_response(200)
 
