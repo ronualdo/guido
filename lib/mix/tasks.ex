@@ -17,7 +17,7 @@ defmodule Mix.Tasks do
     end
   end
 
-  @shortdock "run integration tests"
+  @shortdoc "run integration tests"
   defmodule IntegrationTest do
     def run(_) do
       Mix.Task.run("test", ["--only", "integration"])
