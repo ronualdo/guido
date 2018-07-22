@@ -1,0 +1,26 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: guido-deployment
+  labels: 
+    app: guido
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: guido
+  template:
+    metadata:
+      labels:
+        app: guido
+    spec:
+      containers:
+      - name: guido
+        image: ronualdo/guido:v0.0.1
+        resources:
+          requests:
+            cpu: "1000m"
+            memory: "800Mi"
+          limits:
+            cpu: "1000m"
+            memory: "800Mi"
