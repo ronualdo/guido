@@ -24,5 +24,6 @@ defmodule GuidoWeb.Router do
     pipe_through :api
 
     get "/movies", MoviesCrawlers.MovieController, :index
+    post "/command", Telegram.BotController, :command
   end
 end
