@@ -59,7 +59,7 @@ defmodule Guido.Telegram.BotParserTest do
   end
 
   test "build movies inline query answer" do
-    result = BotParser.build_movies_inline_query_answer(1, "test content")
+    result = BotParser.build_movies_inline_query_answer("test content", 1)
 
     assert %{
       inline_query_id: 1,
